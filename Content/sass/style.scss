@@ -1,0 +1,113 @@
+﻿// Import Bootstrap parts
+@import "../../Scripts/bootstrap/scss/_variables.scss";
+
+// Import "include-media"
+@import "../../Content/sass/include-media/dist/_include-media.scss";
+@import "makegrid";
+$grid-breakpoints: ( xs: 0, sm: 480px, md: 738px, lg: 992px, xl: 1200px ) !default;
+
+$breakpoints: $grid-breakpoints;
+$blue: #6699cc;
+
+.main {
+    .top-banner, .footer-banner {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .page-content {
+        margin-top: 4em;
+        margin-bottom: 4em;
+        padding-left: 2em;
+        padding-right: 2em;
+        max-width: 1200px;
+        width: 100%;
+
+        @include media(">md", "<lg") {
+            margin-top: 6em;
+        }
+
+        @include media("<sm") {
+            margin: 1.5em 0;
+            padding: 0 1em;
+        }
+
+        h2, p, button {
+            font-family: 'Bitter', serif;
+            color: $blue;
+        }
+
+        .grid-image {
+            padding: 0.5em;
+
+            img {
+                z-index: 1;
+
+                &.ui-droppable-hover {
+                    border: 2px solid $blue;
+                }
+
+                &.ui-draggable-dragging {
+                    border: 2px solid yellow;
+                }
+            }
+
+            @include make-col(4);
+
+            @include media("<sm") {
+                @include make-col(12);
+                padding: 0 1.5em 1em;
+            }
+
+            p {
+                font-size: .9rem;
+
+                @include media("<md") {
+                    font-size: .8rem;
+                    line-height: 2;
+                }
+
+                @include media("<sm") {
+                    font-size: .7rem;
+                    line-height: 1.5;
+                }
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                padding: .5em 0 .3em;
+                font-weight: bold;
+
+                @include media("<md") {
+                    font-size: 1.2rem;
+                }
+
+                @include media("<sm") {
+                    font-size: 0.9rem;
+                }
+            }
+
+            button {
+                border-color: $blue;
+                border-width: 2px;
+                font-weight: 700;
+
+                @include media("<md") {
+                    font-size: 0.8rem;
+                }
+
+                &.round {
+                    border-radius: 2rem;
+                }
+
+                &:hover {
+                    background-color: $blue;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+{
+  "title": "include-media",
+  "name": "include-media",
+  "version": "1.4.9",
+  "description": "Simple, elegant and maintainable media queries in Sass",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoboucas/include-media.git"
+  },
+  "main": "index.js",
+  "author": {
+    "name": "Eduardo Boucas",
+    "email": "mail@eduardoboucas.com"
+  },
+  "bugs": {
+    "url": "https://github.com/eduardoboucas/include-media/issues"
+  },
+  "homepage": "http://include-media.com",
+  "keywords": [
+    "sass",
+    "eyeglass-module"
+  ],
+  "eyeglass": {
+    "exports": "eyeglass-exports.js",
+    "needs": "*"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "lint": "scss-lint . --config ./.scss-lint.yml"
+  },
+  "license": "MIT",
+  "pre-commit": [
+    "test"
+  ],
+  "devDependencies": {
+    "gh-pages": "^0.3.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-header": "^1.2.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sass": "^2.0.1",
+    "js-yaml": "^3.3.1",
+    "pre-commit": "^1.0.7",
+    "sassdoc": "^2.1.13"
+  },
+  "gitHead": "0347e4058a7c4f877b043e6ac22a351b8203148c",
+  "_id": "include-media@1.4.9",
+  "_shasum": "d0020b7be3eb2d54868a20943595ce380e0bc43b",
+  "_from": "include-media@~1.4.2",
+  "_npmVersion": "2.15.9",
+  "_nodeVersion": "4.5.0",
+  "_npmUser": {
+    "name": "eduardoboucas",
+    "email": "mail@eduardoboucas.com"
+  },
+  "maintainers": [
+    {
+      "name": "eduardoboucas",
+      "email": "mail@eduardoboucas.com"
+    },
+    {
+      "name": "hugogiraudel",
+      "email": "hugo.giraudel@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "d0020b7be3eb2d54868a20943595ce380e0bc43b",
+    "tarball": "https://registry.npmjs.org/include-media/-/include-media-1.4.9.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/include-media-1.4.9.tgz_1479151722528_0.38655163650400937"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/include-media/-/include-media-1.4.9.tgz",
+  "readme": "ERROR: No README data found!"
+}

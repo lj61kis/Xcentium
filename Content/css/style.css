@@ -1,0 +1,73 @@
+.main .top-banner, .main .footer-banner {
+  width: 100%; }
+.main img {
+  width: 100%; }
+.main .page-content {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 1200px;
+  width: 100%; }
+@media (min-width: 769px) and (max-width: 991px) {
+  .main .page-content {
+    margin-top: 6em; } }
+
+  @media (max-width: 575px) {
+    .main .page-content {
+      margin: 1.5em 0;
+      padding: 0 1em; } }
+  .main .page-content h2, .main .page-content p, .main .page-content button {
+    font-family: 'Bitter', serif;
+    color: #6699cc; }
+  .main .page-content .grid-image {
+    padding: 0.5em;
+    flex: 0 0 33.3333333333%;
+    width: 33.3333333333%;
+    max-width: 33.3333333333%; }
+    .main .page-content .grid-image img {
+      z-index: 1; }
+      .main .page-content .grid-image img.ui-droppable-hover {
+        border: 2px solid #6699cc; }
+      .main .page-content .grid-image img.ui-draggable-dragging {
+        border: 2px solid yellow; }
+    @media (max-width: 575px) {
+      .main .page-content .grid-image {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1.5em 1em; } }
+    .main .page-content .grid-image p {
+      font-size: .9rem; }
+      @media (max-width: 767px) {
+        .main .page-content .grid-image p {
+          font-size: .8rem;
+          line-height: 2; } }
+      @media (max-width: 575px) {
+        .main .page-content .grid-image p {
+          font-size: .7rem;
+          line-height: 1.5; } }
+    .main .page-content .grid-image h2 {
+      font-size: 1.5rem;
+      padding: .5em 0 .3em;
+      font-weight: bold; }
+      @media (max-width: 767px) {
+        .main .page-content .grid-image h2 {
+          font-size: 1.2rem; } }
+      @media (max-width: 575px) {
+        .main .page-content .grid-image h2 {
+          font-size: 0.9rem; } }
+    .main .page-content .grid-image button {
+      border-color: #6699cc;
+      border-width: 2px;
+      font-weight: 700; }
+      @media (max-width: 767px) {
+        .main .page-content .grid-image button {
+          font-size: 0.8rem; } }
+      .main .page-content .grid-image button.round {
+        border-radius: 2rem; }
+      .main .page-content .grid-image button:hover {
+        background-color: #6699cc;
+        color: white; }
+
+/*# sourceMappingURL=style.css.map */
